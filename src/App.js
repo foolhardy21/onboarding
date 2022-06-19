@@ -1,21 +1,34 @@
 import { useEffect, useRef, useState } from "react";
 import styles from './app.module.css'
 import logo from './assets/logo.png'
+import { StageOne } from "./components";
 
 function App() {
-  const [progress, setProgress] = useState(25)
+  const [pg, setPg] = useState(1)
+  const [progress, setProgress] = useState(0)
   const progressBarRef = useRef(null)
+
+  useEffect(() => {
+    setProgress(p => p + 25)
+  }, [pg])
 
   useEffect(() => {
     progressBarRef.current.style.width = `${progress}%`
   }, [progress])
+
+  function getPgComponent() {
+    switch (pg) {
+      case 1: return <StageOne setPg={setPg} />
+      default: return null
+    }
+  }
 
   return (
     <main className={styles.main}>
       <section>
         <div className={styles.headingDiv}>
           <img srcSet={logo} alt='eden logo' />
-          <p>eden</p>
+          <h1>eden</h1>
         </div>
         <div className={styles.progressContainer}>
           <div className={styles.progress} ref={progressBarRef}></div>
@@ -42,8 +55,10 @@ function App() {
             }} className={styles.milestone}>4</span>
           </div>
         </div>
+        {
+          getPgComponent()
+        }
       </section>
-      <button onClick={() => setProgress(p => p + 25)}>click</button>
     </main>
   );
 }

@@ -1,4 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .main {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,6 +15,7 @@
   flex-direction: column;
   align-items: center;
   width: 40vw;
+  font-family: "Raleway", sans-serif;
 }
 
 .headingDiv {
@@ -22,11 +29,8 @@
   height: auto;
 }
 
-.headingDiv > p {
-  font-family: "Raleway", sans-serif;
-  font-size: 1.5rem;
+.headingDiv > h1 {
   text-transform: capitalize;
-  font-weight: bold;
   margin-left: 1rem;
 }
 
@@ -35,6 +39,7 @@
   height: 2px;
   position: relative;
   background: #c5c4c6;
+  margin-bottom: 4rem;
 }
 
 .progress {

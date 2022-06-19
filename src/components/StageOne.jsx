@@ -5,7 +5,7 @@ const StageOne = ({ setPg }) => {
     function handleCreateWorkSpace(e) {
         e.preventDefault()
 
-        setPg(pg => pg + 1)
+        setPg(2)
     }
 
     return (
@@ -13,14 +13,14 @@ const StageOne = ({ setPg }) => {
             <h1>Welcome! First things first...</h1>
             <p className={styles.subheading}>You can always change them later</p>
             <form onSubmit={handleCreateWorkSpace}>
-                <label>
-                    Full name<br />
-                    <input type='text' placeholder='Steve jobs' />
+                <label htmlFor='fullname'>
+                    Full name
                 </label>
-                <label>
-                    Display name<br />
-                    <input type='text' placeholder='Steve' />
+                <input type='text' id='fullname' placeholder='Steve jobs' />
+                <label htmlFor='displayname'>
+                    Display name
                 </label>
+                <input type='text' id='displayname' placeholder='Steve' />
                 <button type='submit'>Create Workspace</button>
             </form>
         </>

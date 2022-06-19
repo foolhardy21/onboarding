@@ -1,0 +1,27 @@
+label > span {
+  color: #c5c4c6;
+}
+
+input {
+  display: inline;
+}
+
+.inputUrl > span {
+  border: solid thin #c5c4c6;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: #c5c4c6;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  background: #f5f5f6;
+}
+
+.inputUrl > input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: solid thin #c5c4c6;
+  outline: none;
+  margin: 0.3rem 0 1rem 0;
+}

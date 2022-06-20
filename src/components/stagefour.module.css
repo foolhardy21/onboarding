@@ -1,0 +1,23 @@
+.iconComplete {
+  padding: 1rem;
+  background: #673ab7;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.iconComplete > span {
+  color: #ffffff;
+}
+
+.btnCreate {
+  padding: 0.5rem 1rem;
+  background: #673ab7;
+  color: #ffffff;
+  border-style: none;
+  border-radius: 5px;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+}

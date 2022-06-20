@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import styles from './app.module.css'
 import logo from './assets/logo.png'
-import { StageOne, StageThree, StageTwo } from "./components";
+import { StageFour, StageOne, StageThree, StageTwo } from "./components";
 
 function App() {
   const [pg, setPg] = useState(1)
@@ -21,6 +21,7 @@ function App() {
       case 1: return <StageOne setPg={setPg} />
       case 2: return <StageTwo setPg={setPg} />
       case 3: return <StageThree setPg={setPg} />
+      case 4: return <StageFour />
       default: return null
     }
   }

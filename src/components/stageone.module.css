@@ -1,0 +1,29 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}
+
+form > button {
+  padding: 0.5rem 1rem;
+  background: #673ab7;
+  color: #ffffff;
+  border-style: none;
+  border-radius: 5px;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+}
+
+form > input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: solid thin #c5c4c6;
+  outline: none;
+  margin: 0.3rem 0 1rem 0;
+}
+
+.subheading {
+  margin: 0.5rem 0 2rem 0;
+}

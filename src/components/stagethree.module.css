@@ -1,0 +1,38 @@
+.optionsContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.optionOne {
+  padding: 1.5rem;
+  margin-right: 1rem;
+  border-radius: 5px;
+  border: solid thin #c5c4c6;
+}
+
+.optionOne > p:first-child {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.optionTwo {
+  padding: 1.5rem;
+  border-radius: 5px;
+  border: solid thin #c5c4c6;
+}
+
+.optionTwo > p:first-child {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.btnCreate {
+  padding: 0.5rem 1rem;
+  background: #673ab7;
+  color: #ffffff;
+  border-style: none;
+  border-radius: 5px;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+}

@@ -12,6 +12,11 @@
   color: #ffffff;
 }
 
+.subHeading {
+  text-align: center;
+  margin-top: 1rem;
+}
+
 .btnCreate {
   padding: 0.5rem 1rem;
   background: #673ab7;

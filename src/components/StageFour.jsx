@@ -10,7 +10,7 @@ const StageFour = () => {
                 </span>
             </div>
             <h1>Congratulations, Eren!</h1>
-            <p>You have completed onboarding, you can start using Eden!</p>
+            <p className={styles.subHeading}>You have completed onboarding, you can start using Eden!</p>
             <button className={styles.btnCreate}>Launch Eden</button>
         </>
     )
